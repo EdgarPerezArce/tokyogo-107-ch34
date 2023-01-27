@@ -1,0 +1,10 @@
+
+.navbar{
+    color:red;
+    border: 1px solid blue;
+}
+.footer{
+    display: block;
+    color: green;
+    background-color: black;
+}
