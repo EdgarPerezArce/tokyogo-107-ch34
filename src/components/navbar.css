@@ -1,6 +1,7 @@
 
 .navbar{
     color:red;
+    background-color: rgb(89, 62, 62);
     border: 1px solid blue;
 }
 .footer{
