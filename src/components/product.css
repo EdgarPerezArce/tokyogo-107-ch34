@@ -1,16 +1,17 @@
 
 .product {
-    border: 1px solid grey;
+    border: 3px solid rgba(128, 128, 128, 0.836);
     display: inline-block;
     width: 240px;
     height: 360px;
     margin: 5px 10px;
     border-radius: 4px;
-    background-color: white;
+    background-color: rgb(159, 154, 131);
     padding: 10px;
+    
 }
 .product:hover{
-    border-color:red;
+    border-color:rgb(251, 251, 251);
 }
 
 .product .prices {
@@ -23,4 +24,11 @@
 .product img {
     width: 220px;
     height: 195px;
+}
+@media (min-width:768px) {
+    .div .product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

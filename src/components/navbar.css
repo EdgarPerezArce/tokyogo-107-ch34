@@ -1,11 +1,11 @@
 
 .navbar{
     color:red;
-    background-color: rgb(89, 62, 62);
-    border: 1px solid blue;
+    background-color: rgb(159,154,131);
+    border: 1px solid rgb(0, 0, 0);
 }
 .footer{
     display: block;
-    color: green;
+    color: rgb(159,154,131);
     background-color: black;
 }
