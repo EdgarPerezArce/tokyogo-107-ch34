@@ -22,7 +22,7 @@ function Product(props) {
 
             
             <QuantityPicker></QuantityPicker>
-            <button className='btn btn-outline-primary'>Add</button>
+            <button className='addbutton'>Add</button>
         </div>
 
 

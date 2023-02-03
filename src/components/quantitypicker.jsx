@@ -20,9 +20,9 @@
     }
     return (
         <div className="qt-picker">
-            <button className='btn btn-outline-secondary' disabled={quantity === 1}onClick={decrease} >-</button>
+            <button className='quantitybutton' disabled={quantity === 1}onClick={decrease} >-</button>
             <label>{quantity}</label>
-            <button className = 'btn btn-outline-secondary' onClick={increase} >+</button>
+            <button className = 'quantitybutton' onClick={increase} >+</button>
         </div>    
 
 

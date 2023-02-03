@@ -3,9 +3,9 @@ import "./navbar.css";
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg navbar bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">【ＴｏＫｙｏＧｏ】</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -34,7 +34,7 @@ function NavBar() {
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-secondary" type="submit">Search</button>
+        <button className="searchbutton" type="submit">Search</button>
       </form>
     </div>
   </div>

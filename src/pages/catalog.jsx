@@ -31,7 +31,7 @@ function Catalog() {
         <div class="productheader">
             <h1>Check out The goods</h1>
                 <h5>We have {products.length} products ready for you!</h5>
-                <button class="btn btn-warning" onClick={magicTest}>Magic</button>
+                <button class="magicbutton" onClick={magicTest}>Magic</button>
                 <br />
 
             {products.map( p => <Product data={p}></Product>)}
