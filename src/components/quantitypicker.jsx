@@ -3,7 +3,7 @@
 
  
  
- function  QuantityPicker() {
+ function  QuantityPicker(props) {
     let [quantity, setQuantity] = useState(1);
 
     function decrease() {
@@ -11,6 +11,7 @@
 
         let val = quantity - 1;
         setQuantity(val);
+        props.onChange(val);// notify the parent
 
     }
     function increase() {

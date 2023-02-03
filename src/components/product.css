@@ -29,16 +29,13 @@
 .product img {
     width: 210px;
     height: 195px;
+    border-radius: 5px;
+    border: 2px solid rgba(126, 59, 42, 0.676);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
-@media (min-width:768px) {
-    .div .product{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+
 .addbutton {
-    box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
 	border-radius:6px;
@@ -61,3 +58,5 @@
 	position:relative;
 	top:1px;
 }
+
+        

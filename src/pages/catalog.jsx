@@ -6,6 +6,8 @@ import "./catalog.css";
 
 function Catalog() {
     const [products, setProducts] = useState([]);
+    const [categories, setCategories] = useState ([]);
+    const [prodsToDisplay, setProdsToDisplay] = useState([]);
     // const products = []
 
     // when the component loads, do something
@@ -20,21 +22,38 @@ function Catalog() {
         let prods = service.getProducts();
         console.log(prods);
         setProducts(prods);// put the results into the state var
+        setProdsToDisplay(prods);
+        let cats = ["keychain", "stickers", "shirts", "shoes"];
+        setCategories(cats);
     }
 
-    function magicTest() {
-        console.log("Blamo, Behold!");
-        setProducts([]);
+    function filter (category){
+        console.log(category);
+        let list = [];
+        for(let i=0; i< products.length; i++) {
+            let prod = products[i];
+            if(prod.category === category) {
+                list.push(prod);
+            }
+        }
+
+        setProdsToDisplay(list);
+    }
+
+    function clearFilter() {
+        setProdsToDisplay(products);
     }
 
     return (
-        <div class="productheader">
+        <div className="productheader">
             <h1>Check out The goods</h1>
                 <h5>We have {products.length} products ready for you!</h5>
-                <button class="magicbutton" onClick={magicTest}>Magic</button>
+               
+                <button onClick={clearFilter} className='btn btn-sm btn-dark btn-filter' >All</button>
+                {categories.map(c => <button key={c} onClick={() => filter(c) } className="catagorybutton">{c}</button>)}
                 <br />
 
-            {products.map( p => <Product data={p}></Product>)}
+            {prodsToDisplay.map( p => <Product key={p._id} data={p}></Product>)}
             
         </div>
     );
