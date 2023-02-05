@@ -3,7 +3,7 @@
 function Footer() {
     return (
         <div className="footer">
-            <label>Edgar Perez</label>
+            <label>All Imaginary Rights Reserved for ToKyoGo©</label>
         </div>
     );
 }

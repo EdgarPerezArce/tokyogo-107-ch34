@@ -46,10 +46,10 @@ function Catalog() {
 
     return (
         <div className="productheader">
-            <h1>Check out The goods</h1>
+            <h1>Irasshaimase! New Merch Available!</h1>
                 <h5>We have {products.length} products ready for you!</h5>
                
-                <button onClick={clearFilter} className='btn btn-sm btn-dark btn-filter' >All</button>
+                <button onClick={clearFilter} className='allbutton' >All</button>
                 {categories.map(c => <button key={c} onClick={() => filter(c) } className="catagorybutton">{c}</button>)}
                 <br />
 
