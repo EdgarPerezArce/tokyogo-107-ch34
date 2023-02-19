@@ -1,0 +1,10 @@
+
+.not-found{
+    background-color: white;
+    min-height: 97vh;
+}
+
+.not-found {
+    float: left;
+    margin-left: 15%;
+}

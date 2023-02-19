@@ -3,19 +3,40 @@ import './App.css';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Catalog from './pages/catalog';
+import NotFound from './pages/notFound';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import Admin from './pages/admin';
+import Home from './pages/home';
+import About from './pages/about';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App" style={{ 
-      backgroundImage: `url("https://cdn.pixabay.com/photo/2020/07/14/16/02/manga-5404746_1280.jpg")` 
-    }}>
+    <BrowserRouter>
+      <div className="App" style={ {
+         backgroundImage: `url("https://cdn.pixabay.com/photo/2020/07/14/16/02/manga-5404746_1280.jpg")`}}>
+    
       <NavBar></NavBar>
       
-      <Catalog></Catalog>
+      <Routes>
+        <Route path="/" element={ <Home /> }></Route>
+        <Route path="/home" element={ <Home /> }></Route>
+
+        <Route path="/catalog" element={ <Catalog /> }></Route>
+        <Route path="/admin" element={ <Admin /> }></Route>
+        <Route path="/about" element={ <About /> }></Route>
+
+        <Route path="*" element={<NotFound /> }></Route>
+
+      </Routes>
+
 
       <Footer></Footer>
     </div>
+    </BrowserRouter>
   );
 }
 
