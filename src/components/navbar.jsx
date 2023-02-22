@@ -1,12 +1,17 @@
 import "./navbar.css";
 
 import {Link} from 'react-router-dom';
+import { useContext } from "react";
+import DataContext from "../store/dataContext";
 
 function NavBar() {
+
+  const cart = useContext(DataContext).cart;
+
     return (
         <nav className="navbar navbar-expand-lg navbar bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" to="/">【ＴｏＫｙｏＧｏ】</a>
+    <Link className="navbar-brand" to="/">【ＴｏＫｙｏＧｏ】</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -19,26 +24,13 @@ function NavBar() {
           <Link className="nav-link" to="/catalog">Catalog</Link>
         </li>
         <li>
-          <Link className="dropdown-item" to="/admin">Admin</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More Info
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">WeebShirts</a></li>
-            <li><a className="dropdown-item" href="#">OtakuGear</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">www.Facebook.com/ToKyoGo</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled"></a>
+          <Link className="nav-link" to="/admin">Admin</Link>
         </li>
       </ul>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="searchbutton" type="submit">Search</button>
+        <Link to="/cart" className = "btn btn-dark">View Cart
+        <span className="badge text-bg-primary">{cart.length}</span>
+        </Link>
       </form>
     </div>
   </div>

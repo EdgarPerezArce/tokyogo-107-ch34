@@ -29,8 +29,8 @@ let addProductsToCart = useContext(DataContext).addProductsToCart;
 
     }
     function handleAdd(){
-        console.log("button clicked!", props.data);
-        addProductsToCart()
+        console.log("button clicked!", props.data );
+        addProductsToCart(props.data);
     }
 
     return (

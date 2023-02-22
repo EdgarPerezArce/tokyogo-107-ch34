@@ -1,6 +1,6 @@
 
 .navbar{
-    color:red;
+    color:rgb(14, 13, 13);
     background-color: rgb(189, 184, 165);
     border: 1px solid rgb(0, 0, 0);
 }
@@ -17,7 +17,7 @@
 	border:1px solid #337fed;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#050505;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
