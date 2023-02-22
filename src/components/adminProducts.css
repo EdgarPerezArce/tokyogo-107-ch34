@@ -1,0 +1,33 @@
+
+.ad-products {
+    display: block;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 15px 30px 15px;
+    background-color: white;
+}
+
+.ad-products h3 {
+    color: rgb(44, 88, 145);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.ad-products .my-control {
+    text-align: left;
+    font-family:'Segoe UI', sans-serif ;
+}
+
+.ad-products .my-control label {
+    color: grey;
+}
+
+.ad-products .my-control .center {
+    text-align: center;
+}
+
+.center{
+    color: black;
+    margin-bottom: 3px;
+}

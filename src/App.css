@@ -37,6 +37,19 @@
   }
 }
 
+.my-control {
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.my-control label {
+  display: block;
+  color: grey;
+
+}
+
+
 .App{
   background-size: cover;
 }

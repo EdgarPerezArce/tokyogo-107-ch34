@@ -8,4 +8,10 @@
 .admin h1 {
     text-align: center;
     padding-top: 10px;
+    color: grey;
+}
+
+.admin .parent {
+    display: flex;
+    justify-content: space-between;
 }
